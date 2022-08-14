@@ -1,8 +1,7 @@
-
 import 'dart:math';
 
 // ignore: unused_import
-import 'package:flutter/foundation.dart';
+// import 'package:flutter/foundation.dart';
 
 import 'package:flutter/material.dart';
 // ignore: import_of_legacy_library_into_null_safe
@@ -28,8 +27,7 @@ class ApppBar extends StatelessWidget {
           Imagewid(),
           VStack([
             customBar()
-                .shimmer(
-                    primaryColor: Vx.red400, secondaryColor: Vx.gray300)
+                .shimmer(primaryColor: Vx.red400, secondaryColor: Vx.gray300)
                 .p12(),
             20.heightBox,
             "Ishwarya"
@@ -38,23 +36,25 @@ class ApppBar extends StatelessWidget {
                 .lineHeight(1.0)
                 .xl6
                 .make()
-                .shimmer(
-                    primaryColor: Vx.orange100, secondaryColor: Vx.gray300)
+                .shimmer(primaryColor: Vx.orange100, secondaryColor: Vx.gray300)
                 .p12(),
             20.heightBox,
-            VxBox().color(Colors.white).size(70, 10).make().px12().shimmer(
-                primaryColor: Vx.red400, secondaryColor: Vx.gray300),
-                20.heightBox,
-                socialMedias().p12(),
-                270.heightBox,
-                VStack([Middlepage().backgroundColor(Vx.red800),
-                30.heightBox,
-                ]),
-                VxBox(
-                  child: footBar(),
-                  
-                ).make()
-                
+            VxBox()
+                .color(Colors.white)
+                .size(70, 10)
+                .make()
+                .px12()
+                .shimmer(primaryColor: Vx.red400, secondaryColor: Vx.gray300),
+            20.heightBox,
+            socialMedias().p12(),
+            270.heightBox,
+            VStack([
+              Middlepage().backgroundColor(Vx.red800),
+              30.heightBox,
+            ]),
+            VxBox(
+              child: footBar(),
+            ).make()
           ])
         ])
       ])).make().scrollVertical(),
@@ -74,7 +74,6 @@ class Imagewid extends StatelessWidget {
         "lib/assets/me.jpeg",
         fit: BoxFit.cover,
         height: context.percentHeight * 60,
-        
       ),
     );
   }
